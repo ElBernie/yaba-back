@@ -1,0 +1,36 @@
+{
+  "env": {
+    "browser": false,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:sonarjs/recommended"
+  ],
+  "plugins": ["prettier", "import", "node", "sonarjs"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true }],
+    "consistent-return": ["off"],
+    "import/extensions": ["error", "always"],
+    "sonarjs/no-duplicate-string": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-unused-vars": [
+      "error", // or "error"
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ]
+  }
+}
