@@ -4,7 +4,7 @@ const Transaction = {
   getAll: async (options) => {
     const { rows } = await queryBuilder.execute({
       query: `
-        SELECT * FROM transactiosn
+        SELECT * FROM transaction
       `,
       clauses: options.query,
     });
@@ -23,7 +23,7 @@ const Transaction = {
 
   create: async (transaction) => {
     const { rows } = await queryBuilder.execute({
-      query: `INSERT INTO transaction (budget_id, category_id, name, amount, date) VALUES ($1, $2, $3, $4, $5, ) RETURNING *`,
+      query: `INSERT INTO transaction (budget_id, category_id, name, amount, type) VALUES ($1, $2, $3, $4, $5 ) RETURNING *`,
       values: [
         transaction.budgetId,
         transaction.categoryId,
@@ -38,12 +38,12 @@ const Transaction = {
 
   update: async (id, transaction) => {
     const { rows } = await queryBuilder.execute({
-      query: `UPDATE transaction SET budget_id = $1, category_id = $2, name= $3 amount = $4, date = $5 WHERE id = $6 RETURNING *`,
+      query: `UPDATE transaction SET budget_id = COALESCE($1, budget_id), category_id = COALESCE($2,category_id), name = COALESCE($3,name), amount = COALESCE($4, amount), created_at = COALESCE($5, created_at) WHERE id = $6 RETURNING *`,
       values: [
         transaction.budgetId,
         transaction.categoryId,
+        transaction.name,
         transaction.amount,
-        transaction.description,
         transaction.date,
         id,
       ],

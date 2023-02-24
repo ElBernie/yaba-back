@@ -34,7 +34,7 @@ const Category = {
   update: async (id, category) => {
     const { rows } = await queryBuilder.execute({
       query:
-        'UPDATE category SET name = $1, color = $2 WHERE id = $3 RETURNING *',
+        'UPDATE category SET name = COALESCE($1,name), color = COALESCE($2,color) WHERE id = $3 RETURNING *',
       values: [category.name, category.color, id],
     });
 

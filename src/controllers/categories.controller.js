@@ -1,9 +1,11 @@
 import Category from '../models/category.model.js';
+import queryBuilder from '../services/query.service.js';
 
 const categoriesController = {
   getAll: async (req, res, next) => {
     try {
-      const categories = await Category.getAll();
+      const queryOptions = queryBuilder.clauseBuilder(req.query);
+      const categories = await Category.getAll(queryOptions);
       res.json(categories);
     } catch (error) {
       next(error);
@@ -27,7 +29,8 @@ const categoriesController = {
     try {
       const category = await Category.create({
         userId: req.user.id,
-        ...req.body,
+        name: req.body.name,
+        color: req.body.color || '#ffffff',
       });
       res.status(201).json(category);
     } catch (error) {

@@ -41,15 +41,14 @@ const BudgetsController = {
   },
 
   update: async (req, res, next) => {
+    console.log('BODY', req.body);
     try {
       const budget = await Budget.getOne(req.params.id);
       if (!budget) {
         res.status(404).json({ error: 'Not found' });
       }
-      if (budget.userId !== req.user.id) {
-        res
-          .status(403)
-          .json({ error: 'You are not allowed to update this budget' });
+      if (budget.user_id !== req.user.id) {
+        res.status(403).json({ error: 'Unauthorized' });
       }
 
       const newBudget = await Budget.update(budget.id, req.body);
@@ -65,9 +64,12 @@ const BudgetsController = {
       if (!budget) {
         res.status(404).json({ error: 'Not found' });
       }
-      if (budget.userId !== req.user.id) {
+      if (budget.user_id !== req.user.id) {
         res.status(401).json({ error: 'Unauthorized' });
       }
+
+      const deletedBudget = await Budget.delete(budget.id);
+      res.status(204).json(deletedBudget);
     } catch (error) {
       next(error);
     }

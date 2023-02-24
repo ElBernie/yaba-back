@@ -48,7 +48,13 @@ const transactionController = {
       if (!transaction) {
         res.status(404).json({ error: 'Not found' });
       }
-      if (transaction.userId !== req.user.id) {
+
+      const budget = await Budget.getOne(transaction.budget_id);
+      if (!budget) {
+        res.status(404).json({ error: 'Not found' });
+      }
+
+      if (budget.user_id !== req.user.id) {
         res.status(403).json({ error: 'Unauthorized' });
       }
 
