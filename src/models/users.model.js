@@ -35,7 +35,7 @@ const userModel = {
         'INSERT INTO "user" (name, first_name, email, password) VALUES ($1, $2, $3, $4) RETURNING id, name, first_name, email, created_at, updated_at',
       values: [
         user.name,
-        user.first_name,
+        user.firstName,
         user.email?.toLowerCase(),
         user.password,
       ],

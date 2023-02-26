@@ -4,7 +4,12 @@ const Category = {
   getAll: async (options) => {
     const { rows } = await queryBuilder.execute({
       query: `
-          SELECT * FROM category
+          SELECT *, (
+              SELECT COALESCE(SUM(amount),0)
+              FROM transaction
+              WHERE category_id = category.id
+            ) as amount
+            FROM category
           `,
       clauses: options.query,
     });
@@ -14,7 +19,11 @@ const Category = {
 
   getOne: async (id) => {
     const { rows } = await queryBuilder.execute({
-      query: `SELECT * FROM category WHERE id = $1`,
+      query: `SELECT *, (
+              SELECT COALESCE(SUM(amount),0)
+              FROM transaction
+              WHERE category_id = category.id
+            ) as amount FROM category WHERE id = $1`,
       values: [id],
     });
 
