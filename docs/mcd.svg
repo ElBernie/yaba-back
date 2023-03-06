@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="448" height="474" viewBox="0 0 448 474" xmlns="http://www.w3.org/2000/svg">
+<rect id="frame" x="0" y="0" width="448" height="474" fill="none" stroke="none" stroke-width="0"/>
+
+<!-- Association CONTIENT -->
+<g class="page_0_3sOOIYln diagram_page" visibility="visible">
+	<line x1="74" y1="229" x2="74" y2="77" stroke="#726f83" stroke-width="2"/>
+	<text x="79" y="170" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="217" y1="77" x2="74" y2="77" stroke="#726f83" stroke-width="2"/>
+	<text x="119" y="94" fill="#726f83" font-family="Verdana" font-size="12">1,1</text>
+	<g>
+		<path d="M99 52 a14 14 90 0 1 14 14 V77 h-78 V66 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
+		<path d="M113 77 v11 a14 14 90 0 1 -14 14 H49 a14 14 90 0 1 -14 -14 V77 H78" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
+		<rect x="35" y="52" width="78" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
+		<line x1="35" y1="77" x2="113" y2="77" stroke="#85956b" stroke-width="1"/>
+		<text x="42" y="69.75" fill="#27360c" font-family="Verdana" font-size="12">CONTIENT</text>
+	</g>
+</g>
+
+<!-- Association APPARTIENT A -->
+<g class="page_0_3sOOIYln diagram_page" visibility="visible">
+	<line x1="217" y1="77" x2="373" y2="77" stroke="#726f83" stroke-width="2"/>
+	<text x="294" y="94" fill="#726f83" font-family="Verdana" font-size="12">1,1</text>
+	<line x1="373" y1="229" x2="373" y2="77" stroke="#726f83" stroke-width="2"/>
+	<text x="378" y="162" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<g>
+		<path d="M411 52 a14 14 90 0 1 14 14 V77 h-104 V66 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
+		<path d="M425 77 v11 a14 14 90 0 1 -14 14 H335 a14 14 90 0 1 -14 -14 V77 H104" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
+		<rect x="321" y="52" width="104" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
+		<line x1="321" y1="77" x2="425" y2="77" stroke="#85956b" stroke-width="1"/>
+		<text x="329" y="69.75" fill="#27360c" font-family="Verdana" font-size="12">APPARTIENT A</text>
+	</g>
+</g>
+
+<!-- Association GERE -->
+<g class="page_0_3sOOIYln diagram_page" visibility="visible">
+	<line x1="217" y1="389" x2="74" y2="389" stroke="#726f83" stroke-width="2"/>
+	<text x="122" y="406" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="74" y1="229" x2="74" y2="389" stroke="#726f83" stroke-width="2"/>
+	<text x="79" y="297" fill="#726f83" font-family="Verdana" font-size="12">1,1</text>
+	<g>
+		<path d="M84 364 a14 14 90 0 1 14 14 V389 h-48 V378 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
+		<path d="M98 389 v11 a14 14 90 0 1 -14 14 H64 a14 14 90 0 1 -14 -14 V389 H48" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
+		<rect x="50" y="364" width="48" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
+		<line x1="50" y1="389" x2="98" y2="389" stroke="#85956b" stroke-width="1"/>
+		<text x="57" y="381.75" fill="#27360c" font-family="Verdana" font-size="12">GERE</text>
+	</g>
+</g>
+
+<!-- Association CREE -->
+<g class="page_0_3sOOIYln diagram_page" visibility="visible">
+	<line x1="217" y1="389" x2="373" y2="389" stroke="#726f83" stroke-width="2"/>
+	<text x="290" y="406" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="373" y1="229" x2="373" y2="389" stroke="#726f83" stroke-width="2"/>
+	<text x="378" y="305" fill="#726f83" font-family="Verdana" font-size="12">1,1</text>
+	<g>
+		<path d="M383 364 a14 14 90 0 1 14 14 V389 h-48 V378 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
+		<path d="M397 389 v11 a14 14 90 0 1 -14 14 H363 a14 14 90 0 1 -14 -14 V389 H48" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
+		<rect x="349" y="364" width="48" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
+		<line x1="349" y1="389" x2="397" y2="389" stroke="#85956b" stroke-width="1"/>
+		<text x="357" y="381.75" fill="#27360c" font-family="Verdana" font-size="12">CREE</text>
+	</g>
+</g>
+
+<!-- Entity TRANSACTION -->
+<g class="page_0_3sOOIYln diagram_page" visibility="visible">
+	<g>
+		<rect x="145" y="9" width="144" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
+		<rect x="145" y="34" width="144" height="111" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
+		<rect x="145" y="9" width="144" height="136" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
+		<line x1="145" y1="34" x2="289" y2="34" stroke="#578dff" stroke-width="1"/>
+	</g>
+	<text x="172" y="26.75" fill="#131114" font-family="Verdana" font-size="12">TRANSACTION</text>
+	<text x="150" y="51.8" fill="#3e3c42" font-family="Verdana" font-size="12">identifiant transaction</text>
+	<line x1="150" y1="54" x2="283" y2="54" stroke="#3e3c42" stroke-width="1"/>
+	<text x="150" y="68.8" fill="#3e3c42" font-family="Verdana" font-size="12">nom</text>
+	<text x="150" y="85.8" fill="#3e3c42" font-family="Verdana" font-size="12">type de transaction</text>
+	<text x="150" y="102.8" fill="#3e3c42" font-family="Verdana" font-size="12">montant</text>
+	<text x="150" y="119.8" fill="#3e3c42" font-family="Verdana" font-size="12">date</text>
+	<text x="150" y="136.8" fill="#3e3c42" font-family="Verdana" font-size="12">date de mise à jour</text>
+</g>
+
+<!-- Entity BUDGET -->
+<g class="page_0_3sOOIYln diagram_page" visibility="visible">
+	<g>
+		<rect x="9" y="178" width="130" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
+		<rect x="9" y="203" width="130" height="77" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
+		<rect x="9" y="178" width="130" height="102" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
+		<line x1="9" y1="203" x2="139" y2="203" stroke="#578dff" stroke-width="1"/>
+	</g>
+	<text x="48" y="195.75" fill="#131114" font-family="Verdana" font-size="12">BUDGET</text>
+	<text x="14" y="220.8" fill="#3e3c42" font-family="Verdana" font-size="12">identifiant budget</text>
+	<line x1="14" y1="223" x2="122" y2="223" stroke="#3e3c42" stroke-width="1"/>
+	<text x="14" y="237.8" fill="#3e3c42" font-family="Verdana" font-size="12">nom</text>
+	<text x="14" y="254.8" fill="#3e3c42" font-family="Verdana" font-size="12">date de creation</text>
+	<text x="14" y="271.8" fill="#3e3c42" font-family="Verdana" font-size="12">date de mise à jour</text>
+</g>
+
+<!-- Entity CATEGORIE -->
+<g class="page_0_3sOOIYln diagram_page" visibility="visible">
+	<g>
+		<rect x="307" y="170" width="132" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
+		<rect x="307" y="195" width="132" height="93" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
+		<rect x="307" y="170" width="132" height="118" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
+		<line x1="307" y1="195" x2="439" y2="195" stroke="#578dff" stroke-width="1"/>
+	</g>
+	<text x="337" y="187.75" fill="#131114" font-family="Verdana" font-size="12">CATEGORIE</text>
+	<text x="312" y="212.8" fill="#3e3c42" font-family="Verdana" font-size="12">identifiant categorie</text>
+	<line x1="312" y1="215" x2="434" y2="215" stroke="#3e3c42" stroke-width="1"/>
+	<text x="312" y="229.8" fill="#3e3c42" font-family="Verdana" font-size="12">nom</text>
+	<text x="312" y="246.8" fill="#3e3c42" font-family="Verdana" font-size="12">couleur</text>
+	<text x="312" y="263.8" fill="#3e3c42" font-family="Verdana" font-size="12">date de creation</text>
+	<text x="312" y="280.8" fill="#3e3c42" font-family="Verdana" font-size="12">date de mise à jour</text>
+</g>
+
+<!-- Entity UTILISATEUR -->
+<g class="page_0_3sOOIYln diagram_page" visibility="visible">
+	<g>
+		<rect x="149" y="313" width="136" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
+		<rect x="149" y="338" width="136" height="127" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
+		<rect x="149" y="313" width="136" height="152" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
+		<line x1="149" y1="338" x2="285" y2="338" stroke="#578dff" stroke-width="1"/>
+	</g>
+	<text x="176" y="330.75" fill="#131114" font-family="Verdana" font-size="12">UTILISATEUR</text>
+	<text x="154" y="355.8" fill="#3e3c42" font-family="Verdana" font-size="12">identifiant utilisateur</text>
+	<line x1="154" y1="358" x2="280" y2="358" stroke="#3e3c42" stroke-width="1"/>
+	<text x="154" y="372.8" fill="#3e3c42" font-family="Verdana" font-size="12">nom</text>
+	<text x="154" y="389.8" fill="#3e3c42" font-family="Verdana" font-size="12">prenom</text>
+	<text x="154" y="406.8" fill="#3e3c42" font-family="Verdana" font-size="12">email</text>
+	<text x="154" y="423.8" fill="#3e3c42" font-family="Verdana" font-size="12">mot de passe</text>
+	<text x="154" y="440.8" fill="#3e3c42" font-family="Verdana" font-size="12">date de creation</text>
+	<text x="154" y="457.8" fill="#3e3c42" font-family="Verdana" font-size="12">date de mise à jour</text>
+</g>
+</svg>
