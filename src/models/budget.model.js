@@ -2,7 +2,11 @@ import queryBuilder from '../services/query.service.js';
 
 const Budget = {
   getAll: async (options) => {
+    // je recupère uniquement les lignes de la table budget qui correspondent aux filtres
     const { rows } = await queryBuilder.execute({
+      // j'ajoute une colonne amount à ma requête,
+      // c'est la somme des montants des transactions liées au budget, sur la table transaction
+      // si la somme est nulle, je retourne 0 (COALESCE)
       query: `
             SELECT *,
             (SELECT COALESCE(SUM(amount),0)
@@ -11,8 +15,10 @@ const Budget = {
               ) as amount
             FROM budget
           `,
+      // je passe les valeurs de la requête en paramètre, issue de queryBuilder
       clauses: options.query,
     });
+    // je retourne les lignes de la table budget
     return rows;
   },
 
